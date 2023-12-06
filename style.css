@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Onest', sans-serif;
+    /* border: 1px solid red; */
+}
+
+
+/* ********************* FONTS ******************* */
+
+.fs72 {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.fs56 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.fs28 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.fs24 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.fs20 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.fs18 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.76px;
+}
+
+.text_grey {
+    color: #FBFBFB;
+}
+
+.text_dgrey {
+    color: #D0D0D0;
+}
+
+.text_blue {
+    color: #6246E4
+}
+
+.text_darkBlue {
+    color: #10082D;
+}
+
+.text_light {
+    color: #9B9B9B;
+}
+
+
+/* *********************END FONTS ******************* */
+
+
+/* *********************BUTTONS******************* */
+
+.btn_blue {
+    border-radius: 16px;
+    background: var(--Bright-Purple, #6246E4);
+    display: flex;
+    padding: 16px 24px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.btn_blue_trans {
+    border-radius: 16px;
+    border: 2px solid var(--Bright-Purple, #6246E4);
+    display: flex;
+    padding: 16px 24px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    color: var(--Bright-Purple, #6246E4);
+    font-size: 20px;
+}
+
+.btn_black {
+    border-radius: 16px;
+    background: var(--Deep-Purple, #10082D);
+    display: flex;
+    padding: 16px 24px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* *********************END BUTTONS ******************* */
+
+
+/* *********************END INPUTS ******************* */
+
+input,
+select,
+textarea {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--neutral-500, #D0D0D0);
+    background: var(--neutral-200, #FBFBFB);
+    padding: 20px 24px;
+}
+
+input.input_blue,
+select.input_blue,
+textarea.input_blue {
+    border-radius: 16px;
+    border: 1px solid var(--Medium, #423095);
+    background: var(--Purple, #221552);
+    padding: 20px 24px;
+}
+
+.mycheckbox {
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--Medium, #423095);
+    background: var(--Purple, #221552);
+}
+
+
+/* *********************END INPUTS ******************* */
+
+
+/* ********************* SCREEN 1440px ******************* */
+
+@media screen and (max-width: 1440px) and (min-width: 1300px) {}
+
+
+/* ********************* SCREEN 1280px ******************* */
+
+@media screen and (max-width: 1280px) and (min-width: 1000px) {}
+
+
+/* ********************* SCREEN MOBILE ******************* */
+
+@media screen and (max-width: 576px) {
+    /* ********************* FONTS ******************* */
+    .fsm32 {
+        font-size: 32px;
+    }
+    .fsm16 {
+        font-size: 16px;
+    }
+    .fsm48 {
+        font-size: 48px;
+    }
+    /* *********************END FONTS ******************* */
+    .btn_blue_trans,
+    .btn_blue {
+        font-size: 18px;
+        height: 56px;
+    }
+    .btn_black,
+    .btn_blue,
+    .btn_blue_trans {
+        height: 56px;
+    }
+}
