@@ -136,14 +136,107 @@ textarea.input_blue {
 /* *********************END INPUTS ******************* */
 
 
+/* Header */
+
+.nav-link {
+    color: #FBFBFB;
+    text-transform: none !important;
+}
+
+.nav-link:hover {
+    color: #FBFBFB;
+    opacity: 0.8;
+}
+
+.nav-link.dropdown-toggle.show {
+    color: #FBFBFB;
+}
+
+.dropdown-toggle::after {
+    background-image: url(media/dropdown.png);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    background-position-x: center;
+    font-size: 0px;
+}
+
+.gb {
+    min-width: 100px;
+    border-radius: 8px !important;
+    border: 1px solid var(--Bright-Purple, #6246E4) !important;
+    background-color: transparent;
+}
+
+.gb li a {
+    color: #FBFBFB;
+    padding: 0 10px !important;
+}
+
+.gb li a.active {
+    color: #6246E4;
+    background: #221552;
+}
+
+
+/* END HEADER */
+
+
+/* FOOTER  */
+
+.footer {
+    background-color: #F2F2F2;
+}
+
+.text_656565 {
+    color: #656565;
+}
+
+.footer_col_hd.first {
+    width: 448px;
+}
+
+.footer_col_hd {
+    width: 250px;
+}
+
+
+/* END FOOTER */
+
+
 /* ********************* SCREEN 1440px ******************* */
 
-@media screen and (max-width: 1440px) and (min-width: 1300px) {}
+@media screen and (max-width: 1440px) and (min-width: 1300px) {
+    .w90hd {
+        width: 90%;
+    }
+    .w45HD {
+        width: 45%;
+    }
+    .w55HD {
+        width: 55%;
+    }
+    .img_fluid_1440_1280_hd {
+        width: 100%;
+    }
+    .service_box_hd {
+        width: 330px;
+        height: 420px;
+    }
+}
 
 
 /* ********************* SCREEN 1280px ******************* */
 
-@media screen and (max-width: 1280px) and (min-width: 1000px) {}
+@media screen and (max-width: 1280px) and (min-width: 1000px) {
+    .img_fluid_1440_1280_hd {
+        width: 100%;
+    }
+    .service_box_hd {
+        width: 290px;
+        height: 450px;
+    }
+}
 
 
 /* ********************* SCREEN MOBILE ******************* */
@@ -170,4 +263,27 @@ textarea.input_blue {
     .btn_blue_trans {
         height: 56px;
     }
+    /* mobile Header */
+    .offcanvas-backdrop {
+        display: none;
+    }
+    #mynavbar {
+        background: var(--Deep-Purple, #10082D);
+        /* Menu */
+        box-shadow: -21px 4px 21px 0px rgba(0, 0, 0, 0.50);
+        max-width: 162px !important;
+        /* position: absolute; */
+        /* right: -30px; */
+        top: 70px;
+        /* padding: 20px; */
+        /* height: 100vh; */
+    }
+    #mynavbar li a {
+        text-align: right;
+        padding-bottom: 32px;
+    }
+    .mob_hd .footer_col_hd {
+        width: 150px;
+    }
+    /* end mobile Header */
 }
